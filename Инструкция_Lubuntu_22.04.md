@@ -1,7 +1,7 @@
 # Инструкция для операционной системы Lubuntu 22.04 LTS
 
 Все команды в данной инструкции необходимо выполнять по очереди  
-Одна строка = одна ккоманда
+Одна строка = одна команда
 
 # Настройка
 
@@ -17,6 +17,7 @@ sudo su
 ## Далее нужно по очереди выполнить команды:
 ```shell
 apt install git gcc make
+cd ~/
 git clone https://github.com/Lora-net/sx1302_hal.git
 cd ~/sx1302_hal
 make
@@ -73,5 +74,5 @@ nano global_conf.json.sx1250.RU864.USB
 Запустить packet_forwarder командами:
 ```shell
 cd ~/sx1302_hal/packet_forwarder
-./lora_pkt_fwd
+sudo ./lora_pkt_fwd
 ```
